@@ -235,6 +235,8 @@ resource "aws_eip" "eip" {
 ```
 #### Nat GateWay Creation
 
+The Private subnet is where we put cloud resources which cannot be accessed from the external network. However, these resources might need access to an external network (i.e. internet), for example to update the operating system, download files, etc. Therefore, the NAT Gateway is needed to route traffic to external network.
+
 ```sh
 resource "aws_nat_gateway" "nat" {
     
@@ -248,7 +250,7 @@ resource "aws_nat_gateway" "nat" {
 }
 ```
 
-### Route Table Public
+#### Route Table Public
 ```sh
 resource "aws_route_table" "public" {
     
