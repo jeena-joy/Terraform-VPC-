@@ -5,13 +5,13 @@ A VPC is a virtual private network which can be used to logically separate cloud
 
 ## Pre-requisites
 
-Terraform installed on your system.
-AWS Account (Create if you don’t have one).
-'access_key' & 'secret_key' of an AWS IAM User.
+- Terraform installed on your system.
+- AWS Account (Create if you don’t have one).
+- 'access_key' & 'secret_key' of an AWS IAM User.
 
 ## Building the Terraform Configuration for an AWS VPC
 
-- Create a dedicated directory where you can create terraform configuration files.
+Create a dedicated directory where you can create terraform configuration files.
 
 ```sh
 mkdir vpc-project
